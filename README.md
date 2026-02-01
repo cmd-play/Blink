@@ -35,7 +35,9 @@ Blink/
 - **Go** 1.21+ (for backend)
 - **Node.js** 18+ and npm/yarn (for frontend)
 
-### Backend Setup
+## Backend
+
+### Setup
 
 1. Navigate to the backend directory:
    ```bash
@@ -44,17 +46,38 @@ Blink/
 
 2. Install dependencies:
    ```bash
+   go mod download
+   ```
+
+3. Tidy go modules:
+   ```bash
    go mod tidy
    ```
 
-3. Run the development server:
-   ```bash
-   go run main.go
-   ```
+### Running the Development Server
+
+Start the Gin server on port 8080:
+```bash
+go run main.go
+```
 
 The backend API will be available at `http://localhost:8080`
 
-### Frontend Setup
+### Available Endpoints
+
+- `GET /` - Welcome endpoint with API version info
+- `GET /health` - Health check endpoint
+
+### Building for Production
+
+```bash
+go build -o blink
+./blink
+```
+
+## Frontend
+
+### Setup
 
 1. Navigate to the frontend directory:
    ```bash
@@ -73,9 +96,31 @@ The backend API will be available at `http://localhost:8080`
 
 The frontend will be available at `http://localhost:5173`
 
+### Building for Production
+
+```bash
+npm run build
+```
+
+The production build will be generated in the `dist/` directory.
+
 ## Development
 
-To run both services simultaneously, open two terminal windows and follow the setup steps above for each.
+To run both services simultaneously, open two terminal windows:
+
+**Terminal 1 - Backend:**
+```bash
+cd backend
+go run main.go
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd frontend
+npm run dev
+```
+
+Both services will now be running and can communicate with each other.
 
 ## Build for Production
 
@@ -97,7 +142,35 @@ npm run build
 
 ## Contributing
 
-(Add contribution guidelines here)
+### Commit Message Guidelines
+
+When making commits, please use the following prefix to clearly indicate which part of the project your changes affect:
+
+- **BACKEND:** - Use this prefix for all backend (Go/Gin) related changes
+  ```
+  BACKEND: Add user authentication endpoint
+  BACKEND: Fix database connection issue
+  ```
+
+- **FRONTEND:** - Use this prefix for all frontend (React/Vite) related changes
+  ```
+  FRONTEND: Add login form component
+  FRONTEND: Update navbar styling
+  ```
+
+- **DOCS:** - Use this prefix for documentation updates
+  ```
+  DOCS: Update README with setup instructions
+  ```
+
+### Example Commits
+
+```bash
+git commit -m "BACKEND: Create health check endpoint"
+git commit -m "FRONTEND: Implement user dashboard page"
+```
+
+This helps maintain a clear project history and makes it easy to track changes across the full stack.
 
 ## License
 
