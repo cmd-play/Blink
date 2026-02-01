@@ -1,0 +1,84 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Reliance Industries",
+      "ticker": "RELIANCE",
+      "exchange": "NSE",
+      "sector": "Energy",
+      "marketCap": "200000 Cr"
+    },
+    {
+      "id": 2,
+      "name": "Tata Consultancy Services",
+      "ticker": "TCS",
+      "exchange": "NSE",
+      "sector": "IT",
+      "marketCap": "150000 Cr"
+    },
+    {
+      "id": 3,
+      "name": "HDFC Bank",
+      "ticker": "HDFCBANK",
+      "exchange": "NSE",
+      "sector": "Banking",
+      "marketCap": "140000 Cr"
+    },
+    {
+      "id": 4,
+      "name": "Infosys",
+      "ticker": "INFY",
+      "exchange": "NSE",
+      "sector": "IT",
+      "marketCap": "80000 Cr"
+    },
+    {
+      "id": 5,
+      "name": "ICICI Bank",
+      "ticker": "ICICIBANK",
+      "exchange": "NSE",
+      "sector": "Banking",
+      "marketCap": "85000 Cr"
+    },
+    {
+      "id": 6,
+      "name": "Wipro",
+      "ticker": "WIPRO",
+      "exchange": "NSE",
+      "sector": "IT",
+      "marketCap": "65000 Cr"
+    },
+    {
+      "id": 7,
+      "name": "Hindustan Unilever",
+      "ticker": "HINDUNILVR",
+      "exchange": "NSE",
+      "sector": "Consumer Goods",
+      "marketCap": "45000 Cr"
+    },
+    {
+      "id": 8,
+      "name": "Axis Bank",
+      "ticker": "AXISBANK",
+      "exchange": "BSE",
+      "sector": "Banking",
+      "marketCap": "55000 Cr"
+    },
+    {
+      "id": 9,
+      "name": "Bajaj Auto",
+      "ticker": "BAJAJAUT",
+      "exchange": "BSE",
+      "sector": "Automobile",
+      "marketCap": "35000 Cr"
+    },
+    {
+      "id": 10,
+      "name": "Maruti Suzuki",
+      "ticker": "MARUTI",
+      "exchange": "NSE",
+      "sector": "Automobile",
+      "marketCap": "100000 Cr"
+    }
+  ]
+}

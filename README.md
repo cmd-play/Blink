@@ -44,7 +44,7 @@ Blink/
 
 2. Install dependencies:
    ```bash
-   go mod download
+   go mod tidy
    ```
 
 3. Run the development server:
