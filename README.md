@@ -4,7 +4,7 @@ A modern full-stack application built with Go, Gin, ReactJS, and Vite.
 
 ## Project Overview
 
-Blink is a full-stack web application that combines a powerful backend API with a fast and responsive frontend.
+Blink is a stock trading platform designed to simulate real stock market investing with virtual money. It provides users with a safe environment to learn and practice stock trading strategies without risking real capital.
 
 ## Tech Stack
 
